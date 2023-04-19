@@ -1,0 +1,300 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background: #eeeeee;
+}
+
+.logo{
+	width: 70%;
+}
+
+ul{
+	display: flex;
+	gap: 1rem;
+}
+
+.menu li{
+	display: inline-block;
+	font-weight: 600;
+	font-size: 1em;
+}
+.menu li a{
+	color: #ff9100;
+	text-decoration: none;
+}
+.menu li a:hover{
+	color: black;
+}
+
+header{
+	background: white; 
+	position: sticky;
+	top: 0;
+	min-width: 100%;
+}
+
+.principal{
+	height: 90vh;
+	background: url(../images/office.jpg)no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.vertical-centered-text {
+	-ms-display: flex;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+h1{
+	font-weight: 700;
+	font-size: 50px;
+	color: rgb(255, 255, 255);
+	padding-top: 5rem;
+}
+
+.orange{
+	background: #ff9100;
+	border: none;
+}
+
+#home {
+	color: white;
+}
+
+#home p{
+	padding: 2rem;
+}
+
+.nosotros{
+	min-height: 90vh;
+}
+
+.nosotros h2{
+	font-weight: 100;
+	text-align: center;
+	padding: 4rem;
+}
+
+.servicios{
+	text-align: center;
+}
+
+.servicios img{
+	width: 40%;
+	text-align: center;
+}
+
+.servicios h1{
+	color: #666;
+	font-weight: 100;
+}
+.servicios .images{
+	padding-top: 30px;
+}
+
+.images .col-md-3{
+	padding-top: 20px;
+	justify-content: space-between;
+}
+
+.ubicacion{
+	min-height: 90vh;
+	background-color: rgba(201, 27, 71, 0.9);
+	padding-top: 2rem;
+	color: #eeeeee;
+}	
+
+.social{
+	text-align: center;
+}
+.social img{
+	width: 30%;
+	text-align: center;
+}
+
+footer{
+	background: rgb(51, 50, 50);
+	height: 63vh;
+	padding-top: 3rem;
+	color: #eeeeee;
+}
+
+footer h5{
+	font-weight: 400;
+}
+
+.nav{
+	flex-direction: column;
+	padding-top: 1rem;
+	padding-bottom: 2rem;
+}
+
+.nav li{
+	padding: 0.5rem ;
+}
+
+.btn-link{
+	text-decoration: none;
+	color: #eeeeee;
+}
+
+.btn-link:hover {
+	color: black;
+	
+}
+
+
+
+@media only screen 
+and (min-width : 414px) 
+and (max-width : 768px) { 
+	.off {
+		display: none !important;
+	}
+	.on {
+		display: block !important;
+	}
+
+	.logo{
+		width: 50%;
+	}
+
+	.menu>li{
+		padding: 1rem 1rem 0rem 1rem;
+		margin: 0;
+	}
+
+	.nosotros{
+		height: auto;
+		padding: 4rem;
+		padding-bottom: 10rem;
+	}
+
+	.servicios{
+		height: auto;
+		padding: 5rem;
+		justify-content: center;
+		padding-top: 8rem;
+		padding-bottom: 8rem;
+	}
+
+	.ubicacion{
+		height: auto;
+		padding-top: 8rem;
+		padding-bottom: 8rem;
+		text-align: center;
+	}	
+
+	.btn-outline-light{
+		justify-self: center;
+		margin-top: 1rem;
+	}
+
+	.col-lg-5, .col-lg-7{
+		justify-content: center;
+		margin-top: 5rem;
+	}
+
+	footer{
+		font-weight: 200;
+		height: auto;
+		padding: 2rem;
+		text-align: center;
+	}
+
+	.list-unstyled{
+		justify-content: center;
+	}
+
+	footer>div>.row{
+		flex-direction: column-reverse;
+	}
+
+	.col-sm-12{
+		padding: 3rem;
+	}
+
+}
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+	.off {
+		display: none !important;
+	}
+	.on {
+		display: block !important;
+	}
+
+	.logo{
+		width: 100%;
+	}
+
+	.nosotros{
+		height: auto;
+		padding:3rem;
+		padding-bottom: 10rem;
+	}
+
+	.servicios{
+		height: auto;
+		padding: 8rem 2rem 8rem 2rem;
+		justify-content: center;
+	}
+
+	.ubicacion{
+		height: auto;
+		padding: 8rem 4rem 8rem 4rem;
+	}	
+
+}
+@media only screen and (min-device-width: 993px) and (max-device-width: 1199.98px) {
+	.off {
+		display: none !important;
+	}
+	.on {
+		display: block !important;
+	}
+	.col-md-2 {
+		width: 100vw;
+	}
+	.social img{
+		width: 100vw;
+	}
+	#home li a {
+		font-size: 13px;
+	}
+	
+	.col-md-4{
+		text-align: center;
+	}
+	.nosotros{
+		height: auto;
+		padding-top: 4rem;
+		padding-bottom: 8rem;
+	}
+
+	#home{
+		padding-top: 65px;
+	}
+
+	h1{
+		font-size: 30px;
+	}
+
+	.ubicacion{
+		height: auto;
+		padding: 8rem;
+	}
+
+	footer{
+		padding-top: 10px;
+		height: auto;
+	}
+
+}
