@@ -13,7 +13,7 @@ HTML - CSS - Boostrap
 
 ## Aditional Information  :white_check_mark:
 
-Potrero Digital => [https://www.potrerodigital.org/].
+Potrero Digital => [https://www.potrerodigital.org/]
 
 
 ## Author :woman:
