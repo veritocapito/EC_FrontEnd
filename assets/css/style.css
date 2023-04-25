@@ -85,19 +85,24 @@ h1{
 
 .servicios{
 	text-align: center;
+	width: 100vw;
 }
 
 .servicios img{
 	width: 40%;
-	text-align: center;
 }
 
-.servicios h1{
-	color: #666;
-	font-weight: 100;
+.service{
+	display: inline-block;
+	border: 3px solid orange;
+	border-radius: 10px;
+	vertical-align: top;
+    margin: 0 1.5%;
 }
-.servicios .images{
-	padding-top: 30px;
+
+.service:hover{
+	border-color: rgb(51, 50, 50);
+	box-shadow: 5px 5px 2px 0px rgba(51,50,50,0.75)
 }
 
 .images .col-md-3{
@@ -180,7 +185,7 @@ and (max-width : 768px) {
 
 	.servicios{
 		height: auto;
-		padding: 5rem;
+		width: 80vw;
 		justify-content: center;
 		padding-top: 8rem;
 		padding-bottom: 8rem;
@@ -243,7 +248,7 @@ and (max-width : 768px) {
 
 	.servicios{
 		height: auto;
-		padding: 8rem 2rem 8rem 2rem;
+		width: 80vw;
 		justify-content: center;
 	}
 
