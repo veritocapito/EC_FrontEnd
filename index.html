@@ -13,7 +13,7 @@
 		<header>
 			<!-- barra de navegacion -->
 			<nav class="navbar navbar-expand-lg bg-gradient text-light ">
-				<div class="container-fluid col-xl-9 text-center">
+				<div class="container col-xl-9 text-center">
 					<a href="#home" data-ancla="home" class="navbar-brand d-block"><img src="./assets/images/logo_apaisado.jpg" alt="logo"  class="logo"></a>
 					<button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
 						aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,7 +44,7 @@
 
 		<div class="nosotros orange" id="nosotros">
 			<div class="container">
-				<div class="row justify-content-center">
+				<div class="row pt-5 pb-5 justify-content-center">
 					<div class="col-md-10 col-lg-8">
 						<h2 class="display-6 fw-bold text-center">Sobre nosotros</h2>
 						<p><strong><i>Estudio Capobianco</i></strong> fue fundado en el año 1975 por el Dr. José Omar Capobianco (Licenciado en Administración-UBA, Contador Público Nacional-UBA). Desde entonces se destaca en el campo profesional brindando valor agregado a sus clientes, con el objetivo de respaldarles en todas las áreas de su empresa o negocio. 
@@ -55,32 +55,32 @@
 			</div>
 		</div>
 
-		<div class="container servicios mt-5 mb-5" id="servicios">
+		<div class="container servicios" id="servicios">
 			<div class="row pt-5 pb-5">
-				<div class="col-md-12 pb-5">
+				<div class="col-md-12 pb-5 pt-5">
 					<h2 class="display-6 fw-bold">Nuestros Servicios</h2>
 				</div>
 			</div>
-			<div class="row images justify-content-center gap-3">
-				<div class="col-xl-3 col-md-6 col-lg-6 p-5 service">
-					<img src="./assets/images/buscando-1.png" alt="">
-					<h3 class="pt-5">CONTABILIDAD<br>AUDITORIA</h3>
-					<p class="pt-5">Auditorías contables, operativas y control interno. Balances. Certificaciones contables. Teneduría de libros.</p>
+			<div class="row pt-5 pb-5 justify-content-center">
+				<div class="col-xl-4 col-md-3 col-lg-6 p-4 service">
+					<img src="./assets/images/buscando-1.png" class="pt-3" alt="contabilidad">
+					<h5 class="pt-3">CONTABILIDAD<br>AUDITORIA</h5>
+					<p class="pt-3">Auditorías contables, operativas y control interno. Balances. Certificaciones contables. Teneduría de libros.</p>
 				</div>
-				<div class="col-xl-3 col-md-6 col-lg-6 p-5 service">
-					<img src="./assets/images/archivo.png" alt="">
-					<h3 class="pt-5">SUELDOS<br>CARGAS SOCIALES</h3>
-					<p class="pt-5">Liquidación de haberes y cargas sociales. Tramites de rubrica de libros laborales en CABA. Asesoramiento laboral integral.</p>
+				<div class="col-xl-4 col-md-3 col-lg-6 p-4 service">
+					<img src="./assets/images/archivo.png" class="pt-3" alt="sueldos">
+					<h5 class="pt-3">SUELDOS<br>CARGAS SOCIALES</h5>
+					<p class="pt-3">Liquidación de haberes y cargas sociales. Tramites de rubrica de libros laborales en CABA. Asesoramiento laboral integral.</p>
 				</div>
-				<div class="col-xl-3 col-md-6 col-lg-6 p-5 service">
-					<img src="./assets/images/presupuesto-1.png" alt="">
-					<h3 class="pt-5">ASESORAMIENTO IMPOSITIVO</h3>
-					<p class="pt-5">Inscripciones. Liquidación de impuestos nacionales, provinciales y municipales. Planes de facilidades de pago.</p>
+				<div class="col-xl-4 col-md-3 col-lg-6 p-4 service">
+					<img src="./assets/images/presupuesto-1.png" class="pt-3" alt="impuestos">
+					<h5 class="pt-3">ASESORAMIENTO IMPOSITIVO</h5>
+					<p class="pt-3">Inscripciones. Liquidación de impuestos nacionales, provinciales y municipales. Planes de facilidades de pago.</p>
 				</div>
-				<div class="col-xl-3 col-md-6 col-lg-6 p-5 service">
-					<img src="./assets/images/avatar-1.png" alt="">
-					<h3 class="pt-5">ASESORAMIENTO SOCIETARIO</h3>
-					<p class="pt-5">Constitución de sociedades. Asesoramiento para la elección del tipo societario. Presentaciones en IGJ.</p>
+				<div class="col-xl-4 col-md-3 col-lg-6 p-4 service">
+					<img src="./assets/images/avatar-1.png" class="pt-3" alt="sociedades">
+					<h5 class="pt-3">ASESORAMIENTO SOCIETARIO</h5>
+					<p class="pt-3">Constitución de sociedades. Asesoramiento para la elección del tipo societario. Presentaciones en IGJ.</p>
 				</div>
 			</div>			
 		</div>
@@ -103,6 +103,77 @@
 				</div>
 			</div>
 		</div>
+
+		<div class="contact">
+			<h2 class="display-6 fw-bold text-center">Contactanos</h2>
+            <form action="./" method="get">
+                <fieldset>
+                    <div>
+                        <label for="nombre"><strong>Nombre:</strong></label><span style="color:red;">*</span>
+                        <input type="text" name="nombre" id="nombre" required>
+                    </div>
+                    <div>
+                        <label for="apellido"><strong>Apellido:</strong></label><span style="color:red;">*</span>
+                        <input type="text" name="apellido" id="apellido" required placeholder="">
+                    </div>
+                    <div>
+                        <label for="email"><strong>Email:</strong></label><span style="color:red;">*</span>
+                        <input type="email" name="email" id="email" required placeholder="nombre@email.com">                        
+                    </div>
+                    <div>
+                        <label for="celular"><strong>Telefono:</strong></label><span style="color:red;">*</span>
+                        <input type="tel" name="celular" id="celular" required placeholder="011 4555-6655">
+                    </div>
+
+					<h5>Consulta:</h5>
+					<div class="consulta block">
+                        <label for="contable">
+							<input type="radio" id="contable" name="consulta" value="contable">
+							Contable
+						</label>
+                        <label for="laboral">
+							<input type="radio" id="laboral" name="consulta" value="laboral">
+							Laboral
+						</label>
+						<label for="impositiva">
+							<input type="radio" id="impositiva" name="consulta" value="impositiva">
+							Impositiva
+						</label>
+						<label for="societaria">							
+							<input type="radio" id="societaria" name="consulta" value="societaria">
+							Societaria
+						</label>
+						<label for="otra">							
+							<input type="radio" id="otra" name="consulta" value="otra">
+							Otra
+						</label>
+					
+                    </div>
+					<div class="centered block">
+						<textarea name="consulta" id="consulta" cols="30" rows="8" placeholder="Escriba el texto de su consulta aquí..."></textarea>
+                        <input type="submit" value="Enviar" class="button">
+                    </div>
+                </fieldset>
+                
+                <fieldset>
+                    <div class="agenda block">
+                        <h5>¿Quiere agendar una consulta virtual con nuestros asesores?</h5>
+                        <label for="agenda"><strong>Horarios de atención:</strong></label>
+                        <select id="agenda" name="agenda">
+                            <option value="agenda1" selected>Lunes 10hs</option>
+                            <option value="agenda2">Martes 11hs</option>
+                            <option value="agenda3">Jueves 10hs</option>
+                            <option value="agenda4">Miercoles 15hs</option>
+                            <option value="agenda6">Jueves 15hs</option>
+                            <option value="agenda5">Viernes 14hs</option>
+                        </select>
+                    </div>
+                    <div class="centered block">
+                        <input type="submit" value="Confirmar" class="button">
+                    </div>
+                </fieldset>
+            </form>
+        </div>
 
 		<footer class="h-auto">
 			<div class="container pt-5" id="contacto">
