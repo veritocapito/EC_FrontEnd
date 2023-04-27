@@ -12,7 +12,7 @@
 	<body>
 		<header>
 			<!-- barra de navegacion -->
-			<nav class="navbar navbar-expand-lg bg-gradient text-light ">
+			<nav class="navbar navbar-expand-lg bg-gradient text-light" id="start">
 				<div class="container col-xl-9 text-center">
 					<a href="#home" data-ancla="home" class="navbar-brand d-block"><img src="./assets/images/logo_apaisado.jpg" alt="logo"  class="logo"></a>
 					<button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
@@ -31,7 +31,7 @@
 			</nav>
 		</header>
 		<main>
-			<div class="principal vertical-centered-text" id="home">
+			<div class="principal centered" id="home">
 				<div class="col-lg-8 col-md-10 text-center pt-5">
 					<h1>Estudio Capobianco</h1>
 					<h4>Contadores Públicos</h4>
@@ -42,20 +42,21 @@
 			</div>
 		</main>
 
-		<div class="nosotros orange" id="nosotros">
+		<section class="nosotros orange" id="nosotros">
 			<div class="container">
 				<div class="row pt-5 pb-5 justify-content-center">
 					<div class="col-md-10 col-lg-8">
 						<h2 class="display-6 fw-bold text-center">Sobre nosotros</h2>
-						<p><strong><i>Estudio Capobianco</i></strong> fue fundado en el año 1975 por el Dr. José Omar Capobianco (Licenciado en Administración-UBA, Contador Público Nacional-UBA). Desde entonces se destaca en el campo profesional brindando valor agregado a sus clientes, con el objetivo de respaldarles en todas las áreas de su empresa o negocio. 
+						<p class="p-3"><strong><i>Estudio Capobianco</i></strong> fue fundado en el año 1975 por el Dr. José Omar Capobianco (Licenciado en Administración-UBA, Contador Público Nacional-UBA). Desde entonces se destaca en el campo profesional brindando valor agregado a sus clientes, con el objetivo de respaldarles en todas las áreas de su empresa o negocio. 
 							Con una trayectoria de más de cuatro décadas en el mercado, cuenta en un staff de profesionales interdisciplinarios, que han adquirido cuantiosa experiencia sobre la problemática actual de las organizaciones.</p> 
+							<img src="./assets/images/meeting.jpg" alt="meeting" class="img-nosotros">
 						<p class="pt-5">Hoy <strong><i>Estudio Capobianco</i></strong> se propone para la atención de sus clientes desarrollar estrategias modernas de trabajo, abarcando temas contables, impositivos, societarios, auditoria, liquidación de haberes y asesoramiento general, ofreciendo soluciones ante las demandas del contexto y un servicio personalizado.</p>
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 
-		<div class="container servicios" id="servicios">
+		<section class="container servicios" id="servicios">
 			<div class="row pt-5 pb-5">
 				<div class="col-md-12 pb-5 pt-5">
 					<h2 class="display-6 fw-bold">Nuestros Servicios</h2>
@@ -83,9 +84,9 @@
 					<p class="pt-3">Constitución de sociedades. Asesoramiento para la elección del tipo societario. Presentaciones en IGJ.</p>
 				</div>
 			</div>			
-		</div>
+		</section>
 
-		<div class="ubicacion mt-5">
+		<section class="ubicacion mt-5">
 			<div class="row d-flex mx-0 my-0 justify-content-center pt-5">
 				<div class="col-xl-4 col-lg-5 col-md-6 pt-5">
 					<h2 class="display-5  fw-bold lh-1 mb-3 pb-3">Donde estamos</h2>
@@ -95,16 +96,16 @@
 					<p class="">Tel. / Cel. +54 11 3215-8576</p>
 					<div class="d-grid gap-2 d-md-flex justify-content-md-start pt-2">
 						<!--<button type="button" class="btn btn-dark btn-lg px-4 me-md-2 orange">Primary</button>-->
-						<button type="button" class="btn btn-outline-light btn-lg px-4">Contactanos</button>
+						<a href="https://www.google.com/maps/dir//Comuna+10,+Av.+Rivadavia+8639,+Buenos+Aires/@-34.6343431,-58.485437,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x95bcc9962eee3bcd:0x55395d1108a894e7!2m2!1d-58.485437!2d-34.6343431!3e0" type="button" class="btn btn-outline-light btn-lg px-4" target="_blank">¿Cómo llegar?</a>
 					</div>
 				</div>
 				<div class="col-xl-4 col-lg-7 col-md-6 d-flex">
 					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1951.9721324057655!2d-58.48601179999035!3d-34.63417225914228!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xedd515ebee8b9a8d!2sEstudio%20Capobianco%20-%20Contadores%20P%C3%BAblicos!5e0!3m2!1ses!2sar!4v1667786122841!5m2!1ses!2sar" width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 				</div>
 			</div>
-		</div>
+		</section>
 
-		<div class="contact">
+		<section class="contact" id="contacto">
 			<h2 class="display-6 fw-bold text-center">Contactanos</h2>
             <form action="./" method="get">
                 <fieldset>
@@ -125,8 +126,8 @@
                         <input type="tel" name="celular" id="celular" required placeholder="011 4555-6655">
                     </div>
 
-					<h5>Consulta:</h5>
-					<div class="consulta block">
+					<h5 class="pt-3">Consulta:</h5>
+					<div class="consulta centered block">
                         <label for="contable">
 							<input type="radio" id="contable" name="consulta" value="contable">
 							Contable
@@ -147,16 +148,17 @@
 							<input type="radio" id="otra" name="consulta" value="otra">
 							Otra
 						</label>
-					
                     </div>
 					<div class="centered block">
-						<textarea name="consulta" id="consulta" cols="30" rows="8" placeholder="Escriba el texto de su consulta aquí..."></textarea>
-                        <input type="submit" value="Enviar" class="button">
+						<textarea name="consulta" id="consulta" cols="30" rows="4" placeholder="Escriba el texto de su consulta aquí..."></textarea>
                     </div>
+					<div class="centered block">
+						<input type="submit" value="Enviar" class="button">
+					</div>
                 </fieldset>
                 
                 <fieldset>
-                    <div class="agenda block">
+                    <div class="agenda centered block">
                         <h5>¿Quiere agendar una consulta virtual con nuestros asesores?</h5>
                         <label for="agenda"><strong>Horarios de atención:</strong></label>
                         <select id="agenda" name="agenda">
@@ -173,13 +175,13 @@
                     </div>
                 </fieldset>
             </form>
-        </div>
+        </section>
 
 		<footer class="h-auto">
-			<div class="container pt-5" id="contacto">
+			<div class="container pt-5" >
 				<div class="row">
 					<div class="col-md-6 text-center col-sm-12 pt-5">
-						<h4>Estudio Capobianco</h4>
+						<h4><a href="#start" class="btn-link title">Estudio Capobianco</a></h4>
 						<ul class="nav flex-colum">
 							<li class="nav-item"><a href="#clientes" class="btn-link">Acceso Clientes</a></li>
 							<li class="nav-item"><a href="#servicios" class="btn-link">Servicios</a></li>
