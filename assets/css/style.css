@@ -70,7 +70,7 @@ h1{
 }
 
 #home p{
-	padding: 2rem 0rem;
+	margin: 3rem 6rem;
 }
 
 .nosotros{
@@ -274,9 +274,13 @@ footer h5{
 	}
 
 	.principal{
-		padding: 2rem;
+		padding: 5rem;
 	}
 	
+	#home p{
+
+	}
+
 	.nosotros{
 		padding: 3em;
 		text-align: center;
@@ -317,6 +321,10 @@ footer h5{
 
 	.list-unstyled{
 		align-self: center;
+	}
+
+	footer>div>.row{
+		flex-direction: column-reverse;
 	}
 } 
 
@@ -386,6 +394,7 @@ footer h5{
 	}
 
 	.checkboxes{
+		flex-direction: column;
 		align-self: center;
 		min-width: 100vw;
 	}
